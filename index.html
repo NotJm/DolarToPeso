@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covertidor dolares a pesos y viceversa</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <form autocomplete="off">
+        <fieldset id="fieldset_pesoDollar">
+            <legend>Conversion de Pesos a Dolares</legend>
+
+            <label for="pesos">Cantidad de Pesos</label>
+            <input type="text" name="pesos" id="input-count-pesos" placeholder="0">
+
+            <label for="dollar">Valor del Dollar ($)</label>
+            <input type="text" name="pesos" id="input-value-dollar" placeholder="0">
+
+            <input type="button" value="Convertir a Dollar" id="btnConversorDollar">
+            <input type="button" value="Valor del Dollar y Pesos" id="call-values">
+
+            <div id="result-pd" style="overflow: hidden;"></div>
+        </fieldset>
+
+        <fieldset id="fieldset_dollarPeso">
+            <legend>Conversion de Dolares a Pesos</legend>
+
+            <label for="dollars">Cantidad de Dolares</label>
+            <input type="text" name="dollars" id="input-count-dollar" placeholder="0">
+            
+            <input type="button" value="Convertir a Pesos" id="btnConversorPesos">
+
+            <div id="result-dp"></div>
+        </fieldset>
+    </form>
+    <script src="./js/form.main.js"></script>
+</body>
+</html>
